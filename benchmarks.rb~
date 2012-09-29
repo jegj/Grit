@@ -28,7 +28,7 @@ def main
       commit2 = 'ca8a30f5a7f0f163bbe3b6f0abf18a6c83b0687a'
     
       Benchmark.bm(8) do |x|
-        var3
+            
         run_code(x, 'packobj') do
           @commit = git.commit('5e3ee1198672257164ce3fe31dea3e40848e68d5')
           @tree = git.tree('cd7422af5a2e0fff3e94d6fb1a8fff03b2841881')
@@ -127,5 +127,3 @@ end
 main()
 
 ##pp Grit::GitRuby.cache_client.stats 
-#test line
-#test line2
